@@ -1,0 +1,192 @@
+1) ls => Used to see list of files and Directories in ascending order  
+//Directories gets denoted in Blue, Files in White, Shell Files in Green
+2) ls -R => shows all the files not only in directories but also subdirectories/list of directories
+3) ls -r => Used to see list of files and Directories in descending order  
+4) ls -al => gives detailed information of the files. The command provides
+ information in a columnar 
+		format. The columns contain the following information: 
+			1st Column File type and access permissions
+			2nd Column # of HardLinks to the File 
+			3rd Column Owner and the creator of the file
+			4th Group of the owner
+			5th File size in Bytes
+			6th Date and Time
+			7th Directory or File name
+5) ls -a => Shows List of all Hidden files
+6) ls -l => Files and Directories
+7) ls --help => Shows Info of every command.
+
+
+6) nano filename => open file in editor and edits file if already exists
+6) nano filename => if file doesnt exists then creates the file.
+6) ./filename    => executes the file
+
+
+6) cat filename1 => To only view the file, we cant edit
+7) cat > filename2 => Creates file with given name, 
+catyou can Write something and then press 
+			ctrl+D to exit
+8) cat filename1 filename2 > filename => Creates file with given name(filename ) 
+catand combines both
+					 files in filename.
+   cat filename1 > filename2 => copies content of 1st into 2
+   cp filename1 filename2 => copies content of 1st into 2
+
+
+9) rm filename => Removes file with given name without confirmation
+
+10) mv filename filename5 => Creates new file(filename5) and Copy content of filename into filename5
+				carries same accessibility rules to new file/ deletes current file
+11) mv filename /home/omkar/Documents => Moves file from current 
+location to given location deletes
+       					current file. / Renames File
+12) sudo command_you_want_to_execute => Sudo program allows 
+regular users to run programs with
+the security privileges of the superuser or root.
+
+ e.g sudo mv sample2 /home/quru99/Documents
+
+
+
+13) touch filename1 filename2 => creates multiple file 
+13) cat > abc.txt    => Single file   Only Text File, No shell
+13) nano abc.sh   => Cretes shell file
+
+
+
+13) mkdir directoryname => Creates Directory in current Directory
+14) mkdir /home/omkar/Music/RockMusic => Creates Sub Directory in Music Directory
+14-2) rmdir directoryname => Removes Directory
+15) mv directoryname newdirectoryname => Renames Directory 
+
+
+16) man commandname => gives us all Info of commandname.
+16) q => quites
+16) ctrl+x => Exit from nano 
+16) ctrl+o => Saves edited file in nano then press enter
+16) ctrl+z => to come out of currently running command
+17) history => History command shows all the basic commands in Linux that you have
+  			used in the past for the current terminal session.
+18) clear => This command clears all the clutter on the terminal and gives you a 
+		clean window to work on,
+
+19) For copying, the text from a source, you would use Ctrl + c, but for pasting 
+it on the Terminal, you need to use Ctrl + Shift + p. 
+
+
+20) pr => Prints the file
+21) pr filename => prints file
+22) pr -2 filename => prints file in 2 columns
+23) pr -d filename => double spaces the consecutive lines
+24) pr -t filename => Does not print the header and top/bottom margins
+25) pr -n filename => Denotes all line with numbers
+26) pr -o 5 filename => Formats the page by the margin number 5
+27) pr -h "Header" Filename => Gives header as Header to filename while printing
+28) lp Filename => Hardcopy, to printer
+29) lpr Filename => Hardcopy, to printer
+
+30) sudo apt-get update => update all the installed packages in our system
+31) sudo apt-get install update 
+
+32) sudo apt-get install mailutils => Installs package mailutils for sending mails through terminal
+33) mail -s 'subject' -c 'cc-address' -b 'bcc-address' 'to-address' => Send
+
+34) sudo adduser username      => Adds a user
+35) sudo passwd -l ‘username'  => Disable a password
+    sudo userdel -r ‘username’ => Delete a user
+
+36) sudo usermod -a -G GROUPNAME USERNAME  => Add user a to a usergroup
+    sudo deluser USER GROUPNAME            => Remove user from a user group
+
+37) finger  => Gives information of all logged in user
+    finger username   => Gives information of a particular userinstall 
+
+
+nano abc.sh  => creates file for first time
+nano abc.sh  => opens file to edit
+./abc.sh     => runs file
+chmod 777 abc.sh  => Gives permission to all
+.sh          => Default extension of any shell script
+
+// Variable: 
+a=10,  then a can be modified.
+readonly a=10 , then You cannot Modify
+
+//ArithMetic
++, -, %, /, *     .......No power
+
+// Relational
+
+-lt => less than
+-le => Less than equal
+-gt => Greater than
+-ge => Greater than equal
+-eq => Equal Equal
+-ne => Not Equal
+
+
+
+
+// Case Statement
+case $id in
+id1)
+;;
+id2)
+;;
+*)
+;;
+esac
+
+
+// For loop
+
+for i in 1,2,3,4,5
+do
+..... 
+.....
+done
+
+for i in {1..10..1}   ....dont give first and last space in {}
+do 
+.....
+done
+
+// While Loop
+
+while [ $i -lt $a ]
+do
+...
+done
+
+
+// Until Loop
+
+
+
+
+// if statement
+
+if [ x -gt y ]
+then
+....
+fi
+
+
+if [ x -gt y ]
+then
+.... 
+else
+.....
+fi
+
+if [ x -gt y ]
+then
+.... 
+elif [    ]
+.....
+else
+.....
+fi
+
+
+// 
